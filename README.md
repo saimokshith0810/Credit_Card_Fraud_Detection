@@ -1,5 +1,4 @@
 # Credit_Card_Fraud_Detection 🚨
-Machine learning project for detecting fraudulent credit card transactions using Random Forest and Logistic Regression on an imbalanced dataset.
 
 ## 📌 Project Overview
 This project aims to detect fraudulent credit card transactions using machine learning techniques. Due to extreme class imbalance, special preprocessing and evaluation strategies are used.
