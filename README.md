@@ -1,35 +1,35 @@
 # Credit_Card_Fraud_Detection 🚨
 
+
 ## 📌 Project Overview
-This project aims to detect fraudulent credit card transactions using machine learning techniques. Due to extreme class imbalance, special preprocessing and evaluation strategies are used.
+This project focuses on detecting fraudulent credit card transactions using machine learning techniques. Due to the highly imbalanced nature of the dataset, special preprocessing and evaluation strategies are applied to ensure effective fraud detection.
 
 ---
 
 ## 📊 Dataset Details
-- Total records: 1,296,675
-- Fraud cases: 7,506 (0.58%)
-- Highly imbalanced dataset
+- Total Records: **1,296,675**
+- Fraud Cases: **7,506 (0.58%)**
+- Dataset is **highly imbalanced**
 
 ---
 
-## ⚙️ Preprocessing Steps
-- Selected numerical features only
-- Handled missing values using median
-- Applied Random Undersampling
-- Balanced dataset (Fraud = Non-Fraud)
-- Train-Test Split (80/20)
+## ⚙️ Data Preprocessing
+- Selected relevant numerical features
+- Handled missing values using **median**
+- Applied **Random Undersampling** to balance dataset
+- Performed **train-test split (80:20)**
 
 ---
 
 ## 🤖 Models Used
 
-### 1. Random Forest (Primary Model)
-- n_estimators = 100
-- Handles non-linear relationships
-- Best performance in recall
+### 🥇 Random Forest (Primary Model)
+- Handles non-linear relationships effectively
+- Performs well on large datasets
+- Provides balanced performance
 
-### 2. Logistic Regression (Baseline)
-- Linear model
+### 🥈 Logistic Regression (Baseline Model)
+- Simple and interpretable
 - Used for comparison
 
 ---
@@ -42,29 +42,33 @@ This project aims to detect fraudulent credit card transactions using machine le
 
 ---
 
-## 🏆 Results
+## 🏆 Results Comparison
 
-### Random Forest:
-- Precision: 91.66%
-- Recall: 87.87%
-- F1 Score: 89.73%
-
-### Logistic Regression:
-- Precision: 93.06%
-- Recall: 73.22%
-- F1 Score: 81.95%
+| Metric      | Random Forest | Logistic Regression |
+|------------|--------------|---------------------|
+| Precision  | 91.66%       | 93.06%              |
+| Recall     | 87.87%       | 73.22%              |
+| F1 Score   | 89.73%       | 81.95%              |
 
 ---
 
-## 📌 Conclusion
-Random Forest outperforms Logistic Regression in detecting fraud cases, especially in recall, making it the better choice.
+### 📌 Key Insight
+Although Logistic Regression achieves slightly higher precision, Random Forest significantly outperforms in recall and F1 score.  
+Since fraud detection prioritizes identifying fraudulent transactions, **Random Forest is the better model**.
 
 ---
 
-## 🚀 How to Run
+## 📊 Confusion Matrix (Random Forest)
 
+- True Positive: **1319**
+- False Positive: **120**
+- False Negative: **182**
+- True Negative: **1382**
+
+---
+
+## 🚀 How to Run the Project
+
+### 1. Install dependencies
 ```bash
 pip install pandas scikit-learn
-python preprocess_dataset.py
-python train_model.py
-python train_logistic_regression.py
