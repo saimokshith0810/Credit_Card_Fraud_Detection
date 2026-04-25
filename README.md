@@ -66,9 +66,3 @@ Since fraud detection prioritizes identifying fraudulent transactions, **Random 
 - True Negative: **1382**
 
 ---
-
-## 🚀 How to Run the Project
-
-### 1. Install dependencies
-```bash
-pip install pandas scikit-learn
